@@ -6,6 +6,7 @@ import { SignupComponent } from './signup/signup.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
+import {HttpClientModule} from '@angular/common/http';
 
 import {RouterModule,Routes} from '@angular/router';
 import { SecondarynavbarComponent } from './secondarynavbar/secondarynavbar.component';
@@ -55,6 +56,7 @@ const appRoutes:Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
